@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  background-image: repeating-radial-gradient(
+      circle at 0% 0%,
+      #d1d7dd 1px 5px,
+      transparent 6px 10px
+    ),
+    repeating-radial-gradient(
+      circle at 100% 100%,
+      transparent 1px 5px,
+      #d1d7dd 6px 10px
+    );
+}
+
+.container-stage {
+  position: relative;
+}
